@@ -1,0 +1,172 @@
+.attribution { font-size: 1.1rem; text-align: center; margin-top: 3.5rem; }
+.attribution a { color: hsl(228, 100%, 84%); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1,h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 4.3rem;
+  color: var(--white);
+}
+
+body {
+  background-color: var(--violet);
+  background-image: url(images/bg-desktop.svg);
+  background-position: center;
+  background-size:cover;
+  min-height: 100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding:2.5rem 12rem;
+}
+
+body,p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --magenta: hsl(300, 69%, 71%);
+  --white: #fff;
+  --grayish: #ffffffde;
+}
+
+/*LOGO CONTAINER*/
+
+.logo-container {
+  margin-bottom:5rem;
+  display: block;
+}
+
+.logo-container img {
+  display: inline-block;
+  text-align: center;
+  margin:auto;
+}
+
+/*MIDDLE CONTAINER*/
+
+.middle-container {
+  display: flex;
+  justify-content: center;
+  gap:5.5rem;
+}
+
+.middle-right h1 {
+  margin-top:3.7rem;
+}
+
+.middle-right p {
+  margin:2.3rem 0;
+  line-height: 3rem;
+  color: var(--grayish);
+}
+
+button {
+  padding:1.5rem 6rem;
+  border:0;
+  color: var(--violet);
+  border-radius: 3rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  color:var(--white);
+  background-color: var(--magenta);
+}
+
+.social-container {
+  display:flex;
+  justify-content: end;
+  align-items: center;
+  gap:4rem;
+  margin-top: 2.5rem;
+}
+
+.social-container i {
+  font-size:2rem;
+  cursor: pointer;
+}
+
+.social-container i:hover {
+  color: var(--magenta);
+}
+
+/*RESPONSIVE SETTINGS*/
+
+@media screen and (max-width:990px) {
+  .logo-container img {
+    max-width:15rem;
+  }
+
+  .middle-container {
+    flex-direction: column;
+  }
+
+  .middle-left img {
+    max-width: 100%;
+  }
+
+  .middle-right {
+    text-align: center;
+  }
+
+  .middle-right h1 {
+    margin:0;
+  }
+
+  body {
+    background-image: url(images/bg-mobile.svg);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+  
+  p {
+    font-size:1.6rem;
+  }
+
+  html {
+    font-size: 56.5%;
+  }
+
+  .social-container {
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  }
+
+  @media screen and (max-width:500px) {
+    button {
+      width:80%;
+    }
+
+    .middle-left img {
+      max-width: 33rem;
+    }
+  }
+
