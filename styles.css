@@ -14,7 +14,7 @@ html {
 h1,h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 4.3rem;
+  font-size: 3.8rem;
   color: var(--white);
 }
 
@@ -34,7 +34,7 @@ body {
 body,p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: var(--white);
 }
 
@@ -143,10 +143,6 @@ button:hover {
 
   h1 {
     font-size: 2.8rem;
-  }
-  
-  p {
-    font-size:1.6rem;
   }
 
   html {
